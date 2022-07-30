@@ -3,6 +3,8 @@ import React,{useState} from 'react';
 const Navbar = () => {
 
 const [sidemenu,sidemenuVisible]=useState(false);
+const [dropdownleft,setDropdownleft]=useState(false);
+const [dropdownright,setDropdownright]=useState(false);
 
     return (
     <>
@@ -25,7 +27,7 @@ const [sidemenu,sidemenuVisible]=useState(false);
 
       </div>
 
-      <div className={`drop-down absolute left-[-24rem] bg-[#2D2E32] py-10 w-96 desktop:hidden laptop:hidden ease-in-out duration-300 ${(sidemenu)?'translate-x-full':'translate-x-0'}`}>
+      <div className={`sidebar absolute left-[-24rem] bg-[#2D2E32] py-10 w-96 desktop:hidden laptop:hidden ease-in-out duration-300 ${(sidemenu)?'translate-x-full':'translate-x-0'}`}>
 
       <ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
         <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Contact<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
@@ -66,17 +68,56 @@ const [sidemenu,sidemenuVisible]=useState(false);
       </div>
       <div className="lower"></div>
       <ul className="hover:cursor-pointer list desktop:flex desktop:items-center desktop:justify-between desktop:mx-20 desktop:mt-6 laptop:flex laptop:items-center laptop:justify-between laptop:mx-16 laptop:mt-5">
-        <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Contact<span><img src={require('./assets/down-chevron.png')} className="desktop:w-3 laptop:w-2 mx-1" alt="" /></span></li>
+        <button onClick={()=>setDropdownleft(!dropdownleft)}>
+
+          <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Contact<span><img src={require('./assets/down-chevron.png')} className="desktop:w-3 laptop:w-2 mx-1" alt="" /></span></li>
+          </button>
+
         <li className="hover:cursor-pointer list-item text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">One Neuron</li>
         <li className="hover:cursor-pointer list-item text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Job Portal</li>
         <li className="hover:cursor-pointer list-item text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Internship Portal</li>
         <li className="hover:cursor-pointer list-item text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Become an affiliate</li>
         <li className="hover:cursor-pointer list-item text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Hall of Fame</li>
         <li className="hover:cursor-pointer list-item text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Blog</li>
-        <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Company<span><img src={require('./assets/down-chevron.png')} className="desktop:w-3 laptop:w-2 mx-1" alt="" /></span></li>
+        <button onClick={()=>setDropdownright(!dropdownright)}>
+      
+       <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] laptop:text-[13px] desktop:text-[17px] hover:text-[#ffffff] hover:font-bold">Company<span><img src={require('./assets/down-chevron.png')} className="desktop:w-3 laptop:w-2 mx-1" alt="" /></span></li>
+      </button>  
       </ul>
       
     </div>
+
+    <div className={`dropdown mobile:hidden tablet:hidden desktop:block laptop:block bg-[#2D2E32] desktop:py-10 desktop:w-96 desktop:absolute laptop:absolute desktop:left-[-24rem] laptop:py-10 laptop:w-96 laptop:left-[-24rem] ease-in-out duration-300 ${(dropdownleft)?'translate-x-full':'translate-x-0'}`}>
+
+<ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
+  <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Data Science<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Data Analytics</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Web Development</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Mobile Development</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Blockchain</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Programming</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Blog</li>
+  <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2  hover:text-[#E07C24] hover:font-bold">Cyber Security<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
+</ul>
+
+
+</div>
+    
+<div className={`dropdown mobile:hidden tablet:hidden bg-[#2D2E32] desktop:py-10 desktop:w-96 laptop:absolute desktop:absolute right-0 laptop:py-10 laptop:w-96 ease-in-out duration-300 ${(dropdownright)?'desktop:block laptop:block':'hidden'}`}>
+
+<ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
+  <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">About-Us<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Hackathon</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Contact-Us</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">FAQs</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Job Assistance</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Privacy Policy</li>
+  <li className="hover:cursor-pointer list-item text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Terms and Conditions</li>
+ 
+</ul>
+
+
+</div>
     </>
     )
 }

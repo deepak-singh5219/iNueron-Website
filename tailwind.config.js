@@ -8,6 +8,7 @@ module.exports = {
       'code': ['Nanum Gothic Coding'],
     },
     screens:{
+      'mobile':'300px',
       'tablet': '640px',
       // => @media (min-width: 640px) { ... }
 
