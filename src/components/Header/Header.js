@@ -11,7 +11,7 @@ const Header = () => {
           <div className="line desktop:h-[2px] desktop:w-[26rem] h-[1px] w-[17rem]  laptop:h-[1px] laptop:w-[21.5rem] bg-[#E07C24]"></div>
         </div>
 
-        <h1 className="heading my-4 text-white font-bold text-[2.5rem] w-[24rem] desktop:text-[3.5rem] desktop:w-[36rem] laptop:text-[3rem] laptop:w-[28rem]">
+        <h1 className="heading my-4 text-white font-bold text-[2rem] w-[20rem] desktop:text-[3.5rem] desktop:w-[36rem] laptop:text-[3rem] laptop:w-[28rem]">
           Highest in quality, affordable in price
         </h1>
 
