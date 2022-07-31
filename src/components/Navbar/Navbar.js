@@ -41,8 +41,8 @@ const [dropdownright,setDropdownright]=useState(false);
       </ul>
 
       <div className="btns flex pl-10">
-          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#FFFFFF] hover:-translate-y-1 hover:scale-110 duration-300 text-[#b1b1b1] hover:shadow-[#505050] rounded-full bg-transparent border-white border-2 px-5 py-2 text-[15px]">Sign Up</button>
-          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#F38F76] hover:-translate-y-1 hover:scale-110 duration-300 px-8 mx-4 py-3 rounded-full text-white bg-[#F38F76] text-[16px]">Login</button>
+          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#FFFFFF] hover:-translate-y-1 hover:scale-110 duration-300 text-[#b1b1b1] hover:shadow-[#505050] rounded-md bg-transparent border-white border-2 px-5 py-2 text-[15px]">Sign Up</button>
+          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#F38F76] hover:-translate-y-1 hover:scale-110 duration-300 px-8 mx-4 py-3 rounded-md text-white bg-[#F38F76] text-[16px]">Login</button>
         </div>
 
       </div>
@@ -61,8 +61,8 @@ const [dropdownright,setDropdownright]=useState(false);
         </div>
 
         <div className="btns flex laptop:mr-8 desktop:mr-16">
-          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#FFFFFF] hover:-translate-y-1 hover:scale-110 duration-300 text-[#b1b1b1] hover:shadow-[#505050] rounded-full bg-transparent border-white border-2 laptop:text-[12px] desktop:text-[15px] desktop:h-12 desktop:w-28 laptop:h-12 laptop:w-28">Sign Up</button>
-          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#F38F76] hover:-translate-y-1 hover:scale-110 duration-300 desktop:mx-5 laptop:mx-4 rounded-full text-white bg-[#E07C24] desktop:h-12 desktop:w-28 laptop:h-12 laptop:w-28 desktop:text-[16px] laptop:text-[12px]">Login</button>
+          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#FFFFFF] hover:-translate-y-1 hover:scale-110 duration-300 text-[#b1b1b1] hover:shadow-[#505050] rounded-md bg-transparent border-white border-2 laptop:text-[12px] desktop:text-[15px] desktop:h-12 desktop:w-28 laptop:h-12 laptop:w-28">Sign Up</button>
+          <button className="btn transition ease-in-out delay-150 hover:cursor-pointer hover:drop-shadow-[2px_2px_4px_#F38F76] hover:-translate-y-1 hover:scale-110 duration-300 desktop:mx-5 laptop:mx-4 rounded-md text-white bg-[#E07C24] desktop:h-12 desktop:w-28 laptop:h-12 laptop:w-28 desktop:text-[16px] laptop:text-[12px]">Login</button>
         </div>
 
       </div>

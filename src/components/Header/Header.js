@@ -12,7 +12,7 @@ const Header = () => {
         </div>
 
         <h1 className="heading my-4 text-white font-bold text-[2rem] w-[20rem] desktop:text-[3.5rem] desktop:w-[36rem] laptop:text-[3rem] laptop:w-[28rem]">
-          Highest in quality, affordable in price
+          <span className="stroke-orange-400 fill-transparent">Highest</span> in quality, affordable in price
         </h1>
 
         <p className="caption font-code desktop:text-[30px] laptop:text-[25px] text-[22px] text-[#E07C24]">#iwritecode</p>
