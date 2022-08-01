@@ -32,6 +32,12 @@ const Header = () => {
             </a>
         </div>
 
+        <div className="buttons flex items-start">
+        <button className=" laptop:text-sm h-[3rem] w-[8rem] text-[12px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-white border-2 border-[#E07C24] text-[#ffffff] hover:cursor-pointer flex justify-center items-center hover:bg-[#E07C24] rounded-lg laptop:w-[10rem] desktop:w-[10rem]">Explore Courses</button>
+          <button className="btn w-[8rem] text-[12px] transition h-[3rem] laptop:w-[10rem] desktop:w-[10rem] ease-in-out delay-150 hover:cursor-pointer hover:bg-transparent hover:-translate-y-1 hover:border-2 hover:border-[#E07C24] hover:scale-105 duration-300 mx-2 desktop:mx-4 laptop:mx-4 rounded-lg text-white bg-[#E07C24] desktop:text-[16px] laptop:text-[14px]">Contact Us</button>
+        
+        </div>
+
       </div>
 
       <img src={require('./assets/header-right.png')} alt="" className="right desktop:w-[50rem] laptop:w-[40rem] w-[30rem] mt-10" />

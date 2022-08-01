@@ -11,7 +11,7 @@ const Course = () => {
                 <div className="glass laptop:text-sm h-[3rem] hover:text-white border-2 border-[#E07C24] text-[#ffffff] hover:cursor-pointer flex justify-center items-center hover:bg-[#E07C24] rounded-lg desktop:mx-8 laptop:mx-5 laptop:w-[12rem] desktop:w-[14rem]">
                 <li className="list-item font-bold ">Live Programs</li>
                 </div>
-                <div className="glass laptop:text-sm h-[3rem] hover:text-white border-2 border-[#E07C24] text-[#ffffff] hover:cursor-pointer flex justify-center items-center hover:bg-[#E07C24] rounded-lg desktop:mx-8 laptop:mx-5 laptop:w-[12rem] desktop:w-[14rem]">
+                <div className="glass  laptop:text-sm h-[3rem] hover:text-white border-2 border-[#E07C24] text-[#ffffff] hover:cursor-pointer flex justify-center items-center hover:bg-[#E07C24] rounded-lg desktop:mx-8 laptop:mx-5 laptop:w-[12rem] desktop:w-[14rem]">
                 <li className="list-item font-bold ">Affordable Programs</li>
                 </div>
                 <div className="glass laptop:text-sm h-[3rem] hover:text-white border-2 border-[#E07C24] text-[#ffffff] hover:cursor-pointer flex justify-center items-center hover:bg-[#E07C24] rounded-lg desktop:mx-8 laptop:mx-5 laptop:w-[12rem] desktop:w-[14rem]">
