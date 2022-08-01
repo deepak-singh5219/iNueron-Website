@@ -43,7 +43,7 @@ function Products() {
 
       <div className="desktop:flex flex-wrap items-center justify-center p-3">
         {Product.map((p) => (
-          <div className="pb-16  items-center justify-center w-screen desktop:w-1/3">
+          <div className="pb-16  items-center justify-center w-[320px] mx-6 laptop:w-1/3 desktop:w-1/3">
             <div className=" flex mt-6 gap-6 justify-center">
               <div className="flex flex-wrap flex-col items-center  justify-center text-[25px] desktop:text-[22px] gap-2  desktop:w-4/5 cursor-pointer  bg-[#7A7B7F]/10 p-5 h-[20rem] w-[30rem] rounded-md hover:scale-105 duration-300 desktop:hover:scale-110 duration-300 ">
                 <img
