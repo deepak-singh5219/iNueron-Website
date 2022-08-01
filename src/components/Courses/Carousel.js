@@ -9,7 +9,6 @@ const Carousel = () => {
     const [sliderRef, setSliderRef] = useState(null)
 
     const settings = {
-        dots: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -84,7 +83,7 @@ const Carousel = () => {
       ]
     
     return(
-        <div className="corousel">
+        <div className="corousel z-0">
 
             <Slider {...settings}>
            {

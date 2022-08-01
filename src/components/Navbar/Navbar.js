@@ -9,25 +9,25 @@ const [dropdownright,setDropdownright]=useState(false);
     return (
     <>
 
-      <div className="small-devices bg-[#28292D] flex items-center justify-between py-3 desktop:hidden laptop:hidden">
+      <div className="small-devices z-10 sticky top-0 bg-[#28292D] flex items-center justify-between py-2 desktop:hidden laptop:hidden">
         <button onClick={()=>sidemenuVisible(!sidemenu)}>
 
-        <img src={require('./assets/menu.png')} alt="" className="menu w-6 h-6 ml-4" />
+        <img src={require('./assets/menu.png')} alt="" className="menu w-5 h-5 ml-4" />
         </button>
 
         {/* <p className="desktop:ml-16 laptop:ml-12 text-[#fff] font-bold text-[30px] logo-text">
           iNeuron
         </p> */}
 
-        <img src={require('./assets/ineuron-logo-white.png')} alt="" className="logo py-2 w-32" />
+        <img src={require('./assets/ineuron-logo-white.png')} alt="" className="logo py-2 w-28" />
 
-        <img src={require('./assets/search.png')} alt="" className="search-icon mr-4 w-6 h-6 rounded-desktop" />
+        <img src={require('./assets/search.png')} alt="" className="search-icon mr-4 w-5 h-5 rounded-desktop" />
 
 
 
       </div>
 
-      <div className={`sidebar absolute left-[-24rem] bg-[#2D2E32] py-10 w-96 desktop:hidden laptop:hidden ease-in-out duration-300 ${(sidemenu)?'translate-x-full':'translate-x-0'}`}>
+      <div className={`sidebar fixed z-10 top-[60px] left-[-24rem] bg-[#2D2E32] py-10 w-96 desktop:hidden laptop:hidden ease-in-out duration-300 ${(sidemenu)?'translate-x-full':'translate-x-0'}`}>
 
       <ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
         <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Contact<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
