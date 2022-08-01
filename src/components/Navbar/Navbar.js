@@ -47,7 +47,7 @@ const [dropdownright,setDropdownright]=useState(false);
 
       </div>
 
-    <div className="hidden drop-shadow-[2px_2px_10px_#ff943636] bg-[#28292D] nav laptop:flex laptop:flex-col laptop:py-7 desktop:flex desktop:flex-col desktop:py-5 font-['poppins']">
+    <div className="hidden bg-[#111111] nav laptop:flex laptop:flex-col laptop:py-7 desktop:flex desktop:flex-col desktop:py-5 font-['poppins']">
       <div className="upper flex items-center justify-between ">
         {/* <p className="desktop:ml-16 laptop:ml-12 text-[#fff] font-bold text-[30px] logo-text">
           iNeuron
@@ -55,9 +55,9 @@ const [dropdownright,setDropdownright]=useState(false);
 
 <img src={require('./assets/ineuron-logo-white.png')} alt="" className="logo desktop:ml-16 laptop:ml-12 py-2 w-32" />
 
-        <div className="searchbar rounded-full flex items-center justify-center bg-[#2D2E32]">
-          <img src={require('./assets/search.png')} alt="" className="search-icon ml-6 w-6 h-6 rounded-desktop" />
-          <input type="text" placeholder='What do you want to learn?' className="border-0 px-5 rounded-laptop bg-transparent desktop:text-desktop laptop:text-laptop laptop:h-[3rem] laptop:w-[25rem] desktop:h-[4rem] desktop:w-[34rem]" />
+        <div className="searchbar rounded-lg flex items-center justify-center bg-[#2D2E32]">
+          <img src={require('./assets/search.png')} alt="" className="search-icon ml-6 w-6 h-6" />
+          <input type="text" placeholder='What do you want to learn?' className="border-0 px-5 rounded-lg bg-transparent desktop:text-desktop laptop:text-laptop laptop:h-[3rem] laptop:w-[25rem] desktop:h-[4rem] desktop:w-[34rem]" />
         </div>
 
         <div className="btns flex laptop:mr-8 desktop:mr-16">
@@ -87,7 +87,7 @@ const [dropdownright,setDropdownright]=useState(false);
       
     </div>
 
-    <div className={`dropdown mobile:hidden tablet:hidden desktop:block laptop:block bg-[#2D2E32] desktop:py-10 desktop:w-96 desktop:absolute laptop:absolute desktop:left-[-24rem] laptop:py-10 laptop:w-96 laptop:left-[-24rem] ease-in-out duration-300 ${(dropdownleft)?'translate-x-full':'translate-x-0'}`}>
+    <div className={`dropdown z-20 mobile:hidden tablet:hidden desktop:block laptop:block bg-[#2D2E32] desktop:py-10 desktop:w-96 desktop:absolute laptop:absolute desktop:left-[-24rem] laptop:py-10 laptop:w-96 laptop:left-[-24rem] ease-in-out duration-300 ${(dropdownleft)?'translate-x-full':'translate-x-0'}`}>
 
 <ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
   <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Data Science<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
@@ -103,7 +103,7 @@ const [dropdownright,setDropdownright]=useState(false);
 
 </div>
     
-<div className={`dropdown mobile:hidden tablet:hidden bg-[#2D2E32] desktop:py-10 desktop:w-96 laptop:absolute desktop:absolute right-0 laptop:py-10 laptop:w-96 ease-in-out duration-300 ${(dropdownright)?'desktop:block laptop:block':'hidden'}`}>
+<div className={`dropdown z-20 mobile:hidden tablet:hidden bg-[#2D2E32] desktop:py-10 desktop:w-96 laptop:absolute desktop:absolute right-0 laptop:py-10 laptop:w-96 ease-in-out duration-300 ${(dropdownright)?'desktop:block laptop:block':'hidden'}`}>
 
 <ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
   <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[22px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">About-Us<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>

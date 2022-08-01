@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 
+
 const App = () => {
   const [loading, setLoading] = useState(false);
 
@@ -25,7 +26,7 @@ const App = () => {
         <Animator />
       ) : (
         <div className="content">
-          <div className="bg-[#000000] font-[poppins] bg-gradient-to-tr from-[#000000] via-[#000000] to-[#ff943636]">
+          <div className="bg-[#000000] font-[poppins] bg-gradient-to-tr from-[#000000] via-[#0c0c0c] to-[#eb6e2513]">
             <Navbar />
             <Header />
             <About />
@@ -34,6 +35,8 @@ const App = () => {
             <Mentor />
             <Footer />
           </div>
+
+          
         </div>
       )}
     </div>

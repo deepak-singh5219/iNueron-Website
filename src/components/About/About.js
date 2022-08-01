@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 
 const About = () => {
   return (
-    <div className="">
+    <div className="mt-64">
       <div className="text-white">
         <h1 className="text-[32px] font-bold text-center text-white pt-20 underline underline-offset-[10px] decoration-orange-500 laptop:text-[2.5rem] desktop:text-[3rem]">
           Why to join us ?
