@@ -6,6 +6,7 @@ import Course from "./components/Courses/Course";
 import Mentor from "./components/Mentors/Mentor";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import Products from "./components/Products/Products";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -29,8 +30,9 @@ const App = () => {
             <Header />
             <About />
             <Course />
-            <Mentor/>
-            <Footer/>
+            <Products />
+            <Mentor />
+            <Footer />
           </div>
         </div>
       )}
