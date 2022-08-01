@@ -37,7 +37,7 @@ const About = () => {
         </div>
         <div className="pb-16">
           <div className="flex justify-around mt-6 gap-6 flex-wrap">
-            <div className="flex  flex-col items-center text-[13px] desktop:text-[22px] gap-3">
+            <div className="flex w-[180px] flex-col items-center text-[13px] desktop:text-[22px] gap-3">
               <img
                 src={require("./assets/books-icon.svg").default}
                 alt=""
@@ -49,7 +49,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex  flex-col items-center text-[13px] desktop:text-[22px] gap-3">
+            <div className="flex w-[180px] flex-col items-center text-[13px] desktop:text-[22px] gap-3">
               <img
                 src={require("./assets/student-iocn.svg").default}
                 alt=""
@@ -61,7 +61,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center text-[13px] desktop:text-[22px] gap-3">
+            <div className="flex w-[180px] flex-col justify-center items-center text-[13px] desktop:text-[22px] gap-3">
               <img
                 src={require("./assets/credit-card-icon.svg").default}
                 alt=""
