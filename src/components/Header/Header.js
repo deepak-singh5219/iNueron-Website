@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css';
 
 
 const Header = () => {
@@ -40,9 +41,49 @@ const Header = () => {
         </div>
 
       </div>
-
+      <div className="right">
       <img src={require('./assets/interview.png')} alt="" className="right hidden desktop:block laptop:block first-letter: desktop:w-[60rem] laptop:w-[40rem] w-[45rem] mt-10" />
       <img src={require('./assets/header-right.png')} alt="" className="right desktop:hidden laptop:hidden w-[30rem] mt-16" />
+
+
+      <img
+                src={require("./assets/frame1.png")}
+                alt=""
+                class="icon-1 smooth-zigzag-anim-1 hidden desktop:block laptop:block absolute laptop:top-[280px] laptop:right-[] desktop:top-[200px] desktop:right-[150px] rounded-lg"
+                width="210"
+              />
+              <img
+                src={require("./assets/frame2.png")}
+                alt=""
+                class="icon-2 smooth-zigzag-anim-2 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[500px] laptop:right-[200px] desktop:top-[800px] desktop:right-[100px]"
+                width="195"
+              />
+              <img
+                src={require("./assets/frame3.png")}
+                alt=""
+                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[600px] laptop:right-[500px] desktop:top-[550px] desktop:right-[400px]"
+                width="195"
+              />
+              <img
+                src={require("./assets/frame6.png")}
+                alt=""
+                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[200px] laptop:right-[100px] desktop:top-[800px] desktop:right-[800px]"
+                width="195"
+              />
+              <img
+                src={require("./assets/frame4.png")}
+                alt=""
+                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[] laptop:right-[120px] desktop:top-[280px] desktop:right-[700px] "
+                width="220"
+              />
+              <img
+                src={require("./assets/Frame 5.png")}
+                alt=""
+                class="icon-4 drop-anim absolute hidden desktop:block laptop:hidden desktop:top-[600px] laptop:top-[] laptop:right-[] desktop:right-[900px]"
+              />
+       
+      </div>
+
     </div>
         </>
     )

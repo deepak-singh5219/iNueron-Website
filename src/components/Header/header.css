@@ -1,0 +1,54 @@
+.icon-1, .icon-4{
+    filter: drop-shadow(0 10px 20px hsla(0, 0%, 0%, 0.2));
+    z-index: 5;
+}
+
+
+.smooth-zigzag-anim-1 { animation: smooth-zigzag-1 5s linear infinite; }
+
+@keyframes smooth-zigzag-1 {
+
+  0%,
+  100% { transform: translate(0); }
+  25%  { transform: translate(10px, 10px); }
+  50%  { transform: translate( 5px,  5px); }
+  75%  { transform: translate(10px, -5px); }
+
+}
+.smooth-zigzag-anim-2 { animation: smooth-zigzag-2 5s linear infinite; }
+
+@keyframes smooth-zigzag-2 {
+
+  0%,
+  100% { transform: translate(0); }
+  25%  { transform: translate(-10px, -10px); }
+  50%  { transform: translate( -5px,  -5px); }
+  75%  { transform: translate(-10px,   5px); }
+
+}
+
+.smooth-zigzag-anim-3 { animation: smooth-zigzag-3 5s linear infinite; }
+
+@keyframes smooth-zigzag-3 {
+
+  0%,
+  100% { transform: translate(0); }
+  25%  { transform: translate( -7px,  -7px); }
+  50%  { transform: translate(-14px, -14px); }
+  75%  { transform: translate( -7px,  -7px); }
+
+}
+
+.drop-anim { animation: drop 2.5s infinite; }
+
+@keyframes drop {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% { transform: translateY(0); }
+  40%  { transform: translateY(-30px); }
+  60%  { transform: translateY(-15px); }
+
+}
