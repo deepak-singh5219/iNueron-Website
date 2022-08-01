@@ -3,7 +3,7 @@ import Animator from "./components/Animator/Animator";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Course from "./components/Courses/Course";
-import Carousel from "./components/Courses/Carousel";
+import Mentor from "./components/Mentors/Mentor";
 import About from "./components/About/About";
 
 const App = () => {
@@ -28,6 +28,7 @@ const App = () => {
             <Header />
             <About />
             <Course />
+            <Mentor/>
           </div>
         </div>
       )}
