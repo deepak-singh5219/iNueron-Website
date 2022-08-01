@@ -1,11 +1,18 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Carousel from './Carousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Course = () => {
     const [drop,setDrop] = useState(false);
+
+    useEffect(()=>{
+        AOS.init();
+    
+      },[]);
     return (
         <>
-        <div className="courses desktop:mt-4 laptop:mt-4 flex flex-col items-center justify-center">
+        <div data-aos="fade-up" className="courses desktop:mt-4 laptop:mt-4 flex flex-col items-center justify-center">
             <h1 className="head text-white my-6 text-[1.65rem] font-bold laptop:text-[2.5rem] desktop:text-[3rem]">What you will learn</h1>
             <ul className="list hidden desktop:flex laptop:flex justify-between desktop:my-[5rem] laptop:my-5">
                 <div className="glass laptop:text-sm h-[3rem] hover:text-white border-2 border-[#E07C24] text-[#ffffff] hover:cursor-pointer flex justify-center items-center hover:bg-[#E07C24] rounded-lg desktop:mx-8 laptop:mx-5 laptop:w-[12rem] desktop:w-[14rem]">

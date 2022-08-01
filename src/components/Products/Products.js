@@ -1,4 +1,7 @@
 import React from "react";
+import { useState ,useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Product = [
   {
@@ -33,9 +36,13 @@ const Product = [
 ];
 
 function Products() {
+  useEffect(()=>{
+    AOS.init();
+
+  },[]);
   return (
     <>
-      <div className="products flex flex-col items-center justify-center">
+      <div data aos="fade-up" className="products flex flex-col items-center justify-center">
         <h1 className="head text-white my-6 text-[1.75rem] font-bold laptop:text-[2.5rem] desktop:text-[3rem]">
           Our Products
         </h1>

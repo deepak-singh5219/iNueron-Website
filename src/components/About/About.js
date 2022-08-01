@@ -1,9 +1,18 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { useState ,useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+  useEffect(()=>{
+    AOS.init();
+
+  },[]);
+
   return (
-    <div className="mt-64">
+    <div data-aos="fade-up" className="mt-64">
       <div className="text-white">
         <h1 className="text-[32px] font-bold text-center text-white pt-20 underline underline-offset-[10px] decoration-orange-500 laptop:text-[2.5rem] desktop:text-[3rem]">
           Why to join us ?

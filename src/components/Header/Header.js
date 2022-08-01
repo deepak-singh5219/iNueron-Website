@@ -1,13 +1,39 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './header.css';
+import { Transition } from '@headlessui/react';
+
 
 
 const Header = () => {
+
+  const [isShowing, setIsShowing] = useState(false);
+
+  useEffect(()=>{
+
+    setTimeout(() => {
+        setIsShowing(true);
+      }, 100);
+
+  },[]);
+
+
     return(
         <>
         <img src={require('./assets/hitesh.jpg')} alt="" className="hidden absolute desktop:block laptop:block brightness-50 opacity-30 z-0" />
         <div className="header-largeScreen flex flex-col desktop:flex desktop:flex-row laptop:flex-row desktop:items-center desktop:justify-between laptop:flex laptop:align-items-center laptop:justify-between laptop:mx-16 laptop:my-24 desktop:mx-24 desktop:my-4 mx-8 my-8">
-      <div className="left">
+      
+
+
+        <Transition 
+        show={isShowing}
+        enter="transform transition ease-in-out duration-1000"
+        enterFrom="opacity-0 translate-y-24"
+        enterTo="opacity-100 tarnslate-y-0"
+        leave='transform transition ease-in-out duration-1000'
+        leaveFrom="opacity-100 translate-y-full"
+        leaveTo="opacity-0 translate-y-24">
+
+<div className="left">
         <div className="tagline">
           <p className="text-white mb-1 z-10 desktop:text-[1.5rem] text-[1rem] laptop:text-[1.25rem]">Learn from the best of the industry</p>
           <div className="line desktop:h-[2px] desktop:w-[26rem] h-[1px] w-[17rem]  laptop:h-[1px] laptop:w-[21.5rem] bg-[#E07C24]"></div>
@@ -41,7 +67,19 @@ const Header = () => {
         </div>
 
       </div>
-      <div className="right">
+
+            </Transition>
+
+            <Transition 
+        show={isShowing}
+        enter="transform transition ease-in-out duration-1000"
+        enterFrom="opacity-0 translate-y-24"
+        enterTo="opacity-100 tarnslate-y-0"
+        leave='transform transition ease-in-out duration-1000'
+        leaveFrom="opacity-100 translate-y-24"
+        leaveTo="opacity-0 translate-y-full">
+
+<div className="right">
       <img src={require('./assets/interview.png')} alt="" className="right hidden desktop:block laptop:block first-letter: desktop:w-[60rem] laptop:w-[40rem] w-[45rem] mt-10" />
       <img src={require('./assets/header-right.png')} alt="" className="right desktop:hidden laptop:hidden w-[30rem] mt-16" />
 
@@ -83,6 +121,13 @@ const Header = () => {
               />
        
       </div>
+    
+           
+
+            </Transition>
+        
+      
+     
 
     </div>
         </>
