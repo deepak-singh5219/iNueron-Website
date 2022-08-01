@@ -14,10 +14,10 @@ const About = () => {
   return (
     <div data-aos="fade-up" className="mt-64">
       <div className="text-white">
-        <h1 className="text-[32px] font-bold text-center text-white pt-20 underline underline-offset-[10px] decoration-orange-500 laptop:text-[2.5rem] desktop:text-[3rem]">
+        <h1 data-aos="fade-up" className="text-[32px] font-bold text-center text-white pt-20 underline underline-offset-[10px] decoration-orange-500 laptop:text-[2.5rem] desktop:text-[3rem]">
           Why to join us ?
         </h1>
-        <div className=" mt-1 flex-col justify-center p-5 desktop:flex desktop:flex-row laptop:flex laptop:flex-row laptop:gap-18 desktop:gap-20 items-center">
+        <div data-aos="fade-up" className=" mt-1 flex-col justify-center p-5 desktop:flex desktop:flex-row laptop:flex laptop:flex-row laptop:gap-18 desktop:gap-20 items-center">
           <div className="video-wrapper h-[20rem] desktop:h-[40rem] desktop:w-[40rem] laptop:h-[30rem] laptop:w-[30rem] flex items-center justify-center">
           <ReactPlayer className=""
             url="https://www.youtube.com/watch?v=WMolA7QMP5w"
@@ -30,8 +30,8 @@ const About = () => {
           </div>
          
 
-          <div className="desktop:w-[38%] laptop:w-[34%] laptop:ml-[25px] mt-8">
-            <h1 className="text-justify desktop:text-start desktop:text-[18px] mb-5">
+          <div data-aos="fade-up" className="desktop:w-[38%] laptop:w-[34%] laptop:ml-[25px] mt-8">
+            <h1 data-aos="fade-up" className="text-justify desktop:text-start desktop:text-[18px] mb-5">
               Our goal is to make education and experiential skills affordable
               and accessible to everyone regardless of their disparate economic
               and educational backgrounds. We empower students to make demands
@@ -44,7 +44,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="pb-16">
+        <div data-aos="fade-up" className="pb-16">
           <div className="flex justify-around mt-6 gap-6 flex-wrap">
             <div className="flex desktop:w-[200px] laptop:w-[200px] w-[180px] flex-col items-center text-[13px] desktop:text-[22px] gap-3">
               <img
@@ -58,7 +58,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex desktop:w-[200px] laptop:w-[200px] w-[180px] flex-col items-center text-[13px] desktop:text-[22px] gap-3">
+            <div data-aos="fade-up" className="flex desktop:w-[200px] laptop:w-[200px] w-[180px] flex-col items-center text-[13px] desktop:text-[22px] gap-3">
               <img
                 src={require("./assets/student-iocn.svg").default}
                 alt=""
@@ -70,7 +70,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex desktop:w-[240px] laptop:w-[240px] w-[180px] flex-col justify-center items-center text-[13px] desktop:text-[22px] gap-3">
+            <div data-aos="fade-up" className="flex desktop:w-[240px] laptop:w-[240px] w-[180px] flex-col justify-center items-center text-[13px] desktop:text-[22px] gap-3">
               <img
                 src={require("./assets/credit-card-icon.svg").default}
                 alt=""

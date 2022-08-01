@@ -33,7 +33,7 @@ const Course = () => {
             </ul>
 
            <button onClick={()=>setDrop(!drop)}>
-           <div className="small-devices px-3 h-[3.5rem] flex items-center justify-between rounded-lg hover:bg-[#E07C24] w-[12rem] border-2 border-[#E07C24] desktop:hidden laptop:hidden">
+           <div data-aos="fade-up" className="small-devices px-3 h-[3.5rem] flex items-center justify-between rounded-lg hover:bg-[#E07C24] w-[12rem] border-2 border-[#E07C24] desktop:hidden laptop:hidden">
              <h1 className="text-[#ffffff] text-lg font-bold">Live Program</h1>
             <img src={require('./assets/down-chevron.png')} className="w-[18px]" alt="" />
             </div>

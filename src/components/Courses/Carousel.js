@@ -4,9 +4,21 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './carousel.css';
 
+import {useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 
 const Carousel = () => {
-    const [sliderRef, setSliderRef] = useState(null)
+
+  const [sliderRef, setSliderRef] = useState(null);
+  useEffect(()=>{
+    AOS.init();
+  
+  },[]);
 
     const settings = {
         speed: 500,
@@ -90,7 +102,7 @@ const Carousel = () => {
             CourseCards.map((card)=>
            (
 
-        <div className="card flex flex-col px-4 py-3 bg-[#7A7B7F]/10 justify-between items-start h-[29rem] rounded-lg my-4">
+        <div data-aos="fade-up" className=" card flex flex-col px-4 py-3 bg-[#7A7B7F]/10 justify-between items-start h-[29rem] rounded-lg my-4">
                <div className="upper mb-8">
                <img src={require(`./assets/${card.imageSrc}.jpg`)} alt="" className="desktop:w-[350px] rounded-[15px] py-3 "/>
                 <h1 className="title text-[#ffffff] font-bold text-[1.35rem] py-2">{card.title}</h1>
