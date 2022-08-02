@@ -87,37 +87,37 @@ const Header = () => {
       <img
                 src={require("./assets/frame1.png")}
                 alt=""
-                class="icon-1 smooth-zigzag-anim-1 hidden desktop:block laptop:block absolute laptop:top-[280px] laptop:right-[] desktop:top-[200px] desktop:right-[150px] rounded-lg"
+                class="icon-1 smooth-zigzag-anim-1 hidden desktop:block laptop:block absolute laptop:top-[280px] laptop:right-[] desktop:top-[230px] desktop:right-[40px] rounded-lg"
                 width="210"
               />
               <img
                 src={require("./assets/frame2.png")}
                 alt=""
-                class="icon-2 smooth-zigzag-anim-2 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[500px] laptop:right-[200px] desktop:top-[800px] desktop:right-[100px]"
+                class="icon-2 smooth-zigzag-anim-2 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[500px] laptop:right-[200px] desktop:top-[600px] desktop:right-[150px]"
                 width="195"
               />
               <img
                 src={require("./assets/frame3.png")}
                 alt=""
-                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[600px] laptop:right-[500px] desktop:top-[550px] desktop:right-[400px]"
+                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[600px] laptop:right-[500px] desktop:top-[450px] desktop:right-[400px]"
                 width="195"
               />
               <img
                 src={require("./assets/frame6.png")}
                 alt=""
-                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[200px] laptop:right-[100px] desktop:top-[800px] desktop:right-[800px]"
+                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[200px] laptop:right-[100px] desktop:top-[700px] desktop:right-[600px]"
                 width="195"
               />
               <img
                 src={require("./assets/frame4.png")}
                 alt=""
-                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[] laptop:right-[120px] desktop:top-[280px] desktop:right-[700px] "
+                class="icon-3 smooth-zigzag-anim-3 hidden desktop:block laptop:block rounded-lg absolute laptop:top-[] laptop:right-[120px] desktop:top-[180px] desktop:right-[550px] "
                 width="220"
               />
               <img
                 src={require("./assets/Frame 5.png")}
                 alt=""
-                class="icon-4 drop-anim absolute hidden desktop:block laptop:hidden desktop:top-[600px] laptop:top-[] laptop:right-[] desktop:right-[900px]"
+                class="icon-4 drop-anim absolute hidden desktop:hidden laptop:hidden desktop:top-[600px] laptop:top-[] laptop:right-[] desktop:right-[600px]"
               />
        
       </div>

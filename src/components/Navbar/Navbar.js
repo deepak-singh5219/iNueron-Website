@@ -27,7 +27,7 @@ const [dropdownright,setDropdownright]=useState(false);
 
       </div>
 
-      <div className={`sidebar fixed z-10 top-[60px] left-[-24rem] bg-[#2D2E32] py-10 w-96 desktop:hidden laptop:hidden ease-in-out duration-300 ${(sidemenu)?'translate-x-full':'translate-x-0'}`}>
+      <div className={`sidebar fixed z-20 top-[60px] left-[-24rem] bg-[#2D2E32] py-10 w-96 desktop:hidden laptop:hidden ease-in-out duration-300 ${(sidemenu)?'translate-x-full':'translate-x-0'}`}>
 
       <ul className="hover:cursor-pointer list flex flex-col  pl-10 items-start  justify-between">
         <li className="hover:cursor-pointer flex items-center justify-center text-[#c5c5c5] text-[18px] font-bold my-4 py-2 hover:text-[#E07C24] hover:font-bold">Contact<span><img src={require('./assets/right.png')} className="w-2 mx-1" alt="" /></span></li>
