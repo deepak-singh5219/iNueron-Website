@@ -28,7 +28,7 @@ const Testimonial = () => {
 			invert: true,
 		},
         autoplay: {
-            delay: 1500,
+            delay: 2000,
           },
 
           breakpoints: {
