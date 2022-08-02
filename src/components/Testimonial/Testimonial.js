@@ -19,17 +19,13 @@ const Testimonial = () => {
           clickable: true,
         },
         navigation: 
-		{
+		    {
 		  nextEl: '.swiper-button-next',
 		  prevEl: '.swiper-button-prev',
-		},
-        mousewheel: 
-		{
-			invert: true,
-		},
-        autoplay: {
-            delay: 2000,
-          },
+		    },
+        // autoplay: {
+        //     delay: 2000,
+        //   },
           breakpoints: {
             300:{
                 slidesPerView: 1,
@@ -55,16 +51,16 @@ const Testimonial = () => {
 
     });
 
-    useEffect(()=>{
+    // useEffect(()=>{
 
-        setTimeout(()=>{
+    //     setTimeout(()=>{
 
-           const start = () => {
-            swiper.autoplay.start();
-           }
-        },3000);
+    //        const start = () => {
+    //         swiper.autoplay.start();
+    //        }
+    //     },3000);
 
-    },[]);
+    // },[]);
 
       const Students = [
         {
@@ -96,12 +92,12 @@ const Testimonial = () => {
 
 
     return(
-        <div className="testimonial desktop:mt-48 laptop:mt-32 mt-24">
+        <div data-aos="fade-up" className="testimonial desktop:mt-48 laptop:mt-32 mt-24">
 
             <h1 className="text-[#ffffff] text-center font-bold desktop:text-[40px] laptop:text-[32px] text-[25px]">What our students say?</h1>
 
 
-<div data-aos="fade-up" class="container mx-auto mt-20 swiper mySwiper">
+<div class="container mx-auto mt-20 swiper mySwiper">
 <div class="swiper-button-prev"></div>  
 		
       <div class="mb-16 swiper-wrapper">
@@ -124,6 +120,7 @@ const Testimonial = () => {
                 </div>
               </div>
         </div>
+
             ))
 
         }
