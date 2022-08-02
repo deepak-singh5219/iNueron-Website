@@ -48,7 +48,7 @@ function Products() {
         </h1>
       </div>
 
-      <div className="desktop:flex flex-wrap items-center justify-center p-3">
+      <div className="desktop:flex laptop:flex flex-wrap items-center justify-center p-3">
         {Product.map((p) => (
           <div data-aos="fade-up" className="pb-16  items-center justify-center w-[320px] mx-6 laptop:w-1/3 desktop:w-1/3">
             <div className=" flex mt-6 gap-6 justify-center">

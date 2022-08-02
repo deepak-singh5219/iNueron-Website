@@ -40,12 +40,14 @@ const App = () => {
             <div data-aos="fade-up" className="wrapper"><Course /></div>
             <div data-aos="fade-up" className="wrapper"><Products /></div>
             <div data-aos="fade-up" className="wrapper"><Mentor /></div>
-            <div data-aos="fade-up" className="wrapper"></div>
+            <div data-aos="fade-up" className="wrapper"><Testimonial/></div>
+            
           
             <Footer/>
          
           </div>
             {/* <Slideup/> */}
+            
         
           
         </div>

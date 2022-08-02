@@ -87,7 +87,7 @@ const Mentor = () => {
 
     return(
 
-        <div data-aos="fade-up" className="mentors flex flex-col items-center justify-center">
+        <div data-aos="fade-up" className="mentors flex flex-col items-center justify-center desktop:mt-48 laptop:mt-32 mt-24">
 
 <h1 className="head text-white my-6 text-[1.75rem] font-bold laptop:text-[2.5rem] desktop:text-[3rem]">Tech Avengers</h1>
 

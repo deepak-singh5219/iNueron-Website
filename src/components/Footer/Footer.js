@@ -7,7 +7,7 @@ const Footer = () => {
 
         <>
 
-        <div className="Footer desktop:hidden laptop:hidden bg-slate-600/30 px-5 mt-8 pb-8">
+        <div className="Footer desktop:hidden laptop:hidden bg-slate-600/30 px-5 desktop:mt-48 laptop:mt-32 mt-24 pb-8 ">
              
              <div className="flex flex-col justify-center mb-10 pt-20">
              <div className="flex items-center justify-between mb-2 ">
