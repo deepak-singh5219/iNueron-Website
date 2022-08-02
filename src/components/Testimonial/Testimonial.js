@@ -30,7 +30,6 @@ const Testimonial = () => {
         autoplay: {
             delay: 2000,
           },
-
           breakpoints: {
             300:{
                 slidesPerView: 1,
