@@ -1,66 +1,54 @@
 import React,{useEffect} from 'react';
-import Swiper from 'swiper/bundle';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import './testimonial.css';
+// import Swiper from 'swiper/bundle';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 
 
 const Testimonial = () => {
 
+  const settings = {
+        
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    cssEase:"linear",
+    responsive: [
+        {
+          breakpoint: 1380,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     
-    const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        grid: {
-          rows: 1,
-        },
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: 
-		    {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev',
-		    },
-        // autoplay: {
-        //     delay: 2000,
-        //   },
-          breakpoints: {
-            300:{
-                slidesPerView: 1,
-            },
+  }
 
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            1380: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
 
-    });
-
-    // useEffect(()=>{
-
-    //     setTimeout(()=>{
-
-    //        const start = () => {
-    //         swiper.autoplay.start();
-    //        }
-    //     },3000);
-
-    // },[]);
+    
 
       const Students = [
         {
@@ -97,14 +85,16 @@ const Testimonial = () => {
             <h1 className="text-[#ffffff] text-center font-bold desktop:text-[40px] laptop:text-[32px] text-[25px]">What our students say?</h1>
 
 
-<div class="container mx-auto mt-20 swiper mySwiper">
-<div class="swiper-button-prev"></div>  
+<div class="container mx-auto mt-20">
+ 
 		
-      <div class="mb-16 swiper-wrapper">
+      <div class="mb-16 flex items-center justify-center">
+
+      <Slider {...settings}>
         {
 
             Students.map((student)=> (
-                <div data-aos="fade-up" class="swiper-slide bg-[#7A7B7F]/10 ">
+                <div data-aos="fade-up" class="bg-[#7A7B7F]/10 ">
             <div class="p-4 text-gray-800 rounded-lg shadow-md">
                 <div class="mb-2">
                   <p class="mb-2 text-center text-slate-300 ">
@@ -124,12 +114,11 @@ const Testimonial = () => {
             ))
 
         }
-        
+        </Slider>
         
       </div>
 
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination"></div>
+
     </div>
 
 

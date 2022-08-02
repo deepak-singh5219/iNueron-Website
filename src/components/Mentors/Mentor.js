@@ -96,10 +96,10 @@ const Mentor = () => {
         Mentors.map((card)=>
        (
 
-    <div className="card flex flex-col px-4 py-3 bg-[#7A7B7F]/10 justify-between items-center h-[28rem] rounded-lg my-4">
+    <div className="card flex flex-col px-4 py-3 bg-[#7A7B7F]/10 justify-between items-center h-[28rem] w-auto rounded-lg my-4">
            <div className="upper my-4 flex flex-col items-center justify-center">
            <img src={require(`./assets/${card.imageSrc}.png`)} alt="" className="drop-shadow-[2px_2px_4px_#3d3a3a] desktop:w-[200px] laptop:w-[150px] w-[170px] rounded-full py-3 "/>
-            <h1 className="title text-[#ffffff] font-bold text-[1.35rem] py-2">{card.name}</h1>
+            <h1 className="title text-[#ffffff] text-center font-bold text-[1.35rem] py-2">{card.name}</h1>
            </div>
             <div className="bottom flex items-center justify-center">
             <p className="name text-[#cec9c4] text-[18px]">{card.designation}</p>

@@ -102,15 +102,15 @@ const Carousel = () => {
             CourseCards.map((card)=>
            (
 
-        <div data-aos="fade-up" className=" card flex flex-col px-4 py-3 bg-[#7A7B7F]/10 justify-between items-start h-[29rem] rounded-lg my-4">
+        <div data-aos="fade-up" className=" card flex flex-col px-4 py-3 bg-[#7A7B7F]/10 justify-between items-start desktop:h-[29rem] laptop:h-[27rem] h-[25rem] rounded-lg my-4">
                <div className="upper mb-8">
                <img src={require(`./assets/${card.imageSrc}.jpg`)} alt="" className="desktop:w-[350px] rounded-[15px] py-3 "/>
                 <h1 className="title text-[#ffffff] font-bold text-[1.35rem] py-2">{card.title}</h1>
                </div>
                 <div className="bottom">
-                <p className="name text-[#cec9c4] text-[18px]">{card.name}</p>
+                <p className="name text-[#cec9c4] desktop:text-[18px] laptop:text-[17px] text-[15px]">{card.name}</p>
                 <p className="price text-[#ffffff] flex items-center font-bold text-[1.25rem] py-3"><img src={require('./assets/rupee.png')} className="w-[1.25rem]" alt="" /> {card.price}</p>
-                <button className="buy h-[3rem] mb-2 transition ease-in-out delay-150 laptop:text-sm hover:-translate-y-1 hover:scale-110 duration-300  text-[16px] w-[6rem] laptop:w-[8rem] border-2 border-[#E07C24] text-[#ffffff] text-lg hover: hover:cursor-pointer flex justify-center items-center bg-[#E07C24] rounded-lg desktop:w-[9rem]">Buy Now</button>
+                <button className="buy h-[3rem] mb-2 transition ease-in-out delay-150 laptop:text-sm hover:-translate-y-1 hover:scale-110 duration-300 desktop:text-[16px] laptop:text-[16px] w-[6rem] laptop:w-[8rem] border-2 border-[#E07C24] text-[#ffffff] text-md hover: hover:cursor-pointer flex justify-center items-center bg-[#E07C24] rounded-lg desktop:w-[9rem]">Buy Now</button>
                 </div>
                 </div>
 
