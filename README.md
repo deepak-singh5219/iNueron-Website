@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# iNeuron Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-blue)
+![](https://img.shields.io/badge/React%20Js-Tailwind%20CSS-brightgreen)
+![HTML & CSS](https://img.shields.io/badge/HTML-CSS-green)
+![](https://img.shields.io/badge/FindCoder-Full%20Stack%20Js%20Hackathon-yellow)
 
-## Available Scripts
+This is the homepage of iNeuron website build for the Full Stack JS Hackathon conducted on [FindCoder](https://findcoder.io) by [iNeuron](https://ineuron.ai/) under `Hitesh Choudhary`.
 
-In the project directory, you can run:
+I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up a hackathon to us so that we learn more. Before building this project I was not confident enough but now building this project from scratch has made me confident on my skills and learned a lot of new stuff here.
 
-### `npm start`
+# General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- This project contains the mobile responsive home page of iNeuron Business Website.
+- iNeuron started as a product development company, then launched its ed-tech division. We provide 360 degree solutions from learning to internship to finding a job, and the first ever educational OTT platform to upgrade your skill set.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Technologies Used
 
-### `npm test`
+<img align="left" alt="HTML5" width="26px" src="./readmeAssets/html-5.png" /> `HTML`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<img align="left" alt="CSS3" width="26px" src="./readmeAssets/css-3.png" /> `CSS`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img align="left" alt="JavaScript" width="26px" src="./readmeAssets/javascp1.png" /> `JavaScript`
 
-### `npm run eject`
+<img align="left" alt="React Js" width="26px" src="./readmeAssets/logo512.png" /> `React Js`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/Tailwind.png" /> `Tailwind CSS`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Features
+ - Build over React which offers stability on single page web apps.
+ - Contains animations which makes it more interactive to users.
+ - Transitions which gives a smooth scroll feel
+ - Carousel cards
+ - Clean and Beautiful UI Design
+ - Made in Dark Mode
+ - Fully Responsive Mobile Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ # Website
+ ![](./readmeAssets/screebshot.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ # Mobile Responsive Design
 
-## Learn More
+ 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ # Contact
 
-### Code Splitting
+ <img align="left" alt="HTML5" width="26px" src="./readmeAssets/linkedin.png" /> [Linkedin](https://www.linkedin.com/in/deepaksingh5219/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<img align="left" alt="CSS3" width="26px" src="./readmeAssets/github.png" /> [GitHub](https://github.com/deepak-singh5219/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<img align="left" alt="JavaScript" width="26px" src="./readmeAssets/instagram.png" /> [Instagram](https://www.instagram.com/deepak_singh_5219/)
 
-### Advanced Configuration
+<img align="left" alt="React Js" width="26px" src="./readmeAssets/findcoder.png" /> [Findcoder](https://www.findcoder.io/u/deepaksingh5219)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

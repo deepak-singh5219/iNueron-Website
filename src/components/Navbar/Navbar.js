@@ -9,7 +9,7 @@ const [dropdownright,setDropdownright]=useState(false);
     return (
     <>
 
-      <div className="small-devices z-10 sticky top-0 bg-[#28292D] flex items-center justify-between py-2 desktop:hidden laptop:hidden">
+      <div className="small-devices z-20 sticky top-0 bg-[#28292D] flex items-center justify-between py-2 desktop:hidden laptop:hidden">
         <button onClick={()=>sidemenuVisible(!sidemenu)}>
 
         <img src={require('./assets/menu.png')} alt="" className="menu w-5 h-5 ml-4" />

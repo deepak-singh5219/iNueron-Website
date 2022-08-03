@@ -110,7 +110,7 @@ const Carousel = () => {
                 <div className="bottom">
                 <p className="name text-[#cec9c4] desktop:text-[18px] laptop:text-[17px] text-[15px]">{card.name}</p>
                 <p className="price text-[#ffffff] flex items-center font-bold text-[1.25rem] py-3"><img src={require('./assets/rupee.png')} className="w-[1.25rem]" alt="" /> {card.price}</p>
-                <button className="buy h-[3rem] mb-2 transition ease-in-out delay-150 laptop:text-sm hover:-translate-y-1 hover:scale-110 duration-300 desktop:text-[16px] laptop:text-[16px] w-[6rem] laptop:w-[8rem] border-2 border-[#E07C24] text-[#ffffff] text-md hover: hover:cursor-pointer flex justify-center items-center bg-[#E07C24] rounded-lg desktop:w-[9rem]">Buy Now</button>
+                <button className="buy desktop:h-[3rem] laptop:h-[3rem] mb-2 transition ease-in-out delay-150 laptop:text-sm hover:-translate-y-1 hover:scale-110 duration-300 desktop:text-[16px] laptop:text-[16px] text-sm h-[2.5rem] w-[5rem] laptop:w-[8rem] border-2 border-[#E07C24] text-[#ffffff] text-md hover: hover:cursor-pointer flex justify-center items-center bg-[#E07C24] rounded-lg desktop:w-[9rem]">Buy Now</button>
                 </div>
                 </div>
 
