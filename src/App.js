@@ -11,6 +11,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Slideup from "./components/Transitions/Slideup";
+import Contact from "./components/Contactus/Contact";
 
 
 
@@ -41,12 +42,13 @@ const App = () => {
             <div data-aos="fade-up" className="wrapper"><Products /></div>
             <div data-aos="fade-up" className="wrapper"><Mentor /></div>
             <div data-aos="fade-up" className="wrapper"><Testimonial/></div>
+            <div data-aos="fade-up" className="wrapper"><Contact/></div>
+            
             
           
             <Footer/>
          
           </div>
-            {/* <Slideup/> */}
             
         
           

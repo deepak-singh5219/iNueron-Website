@@ -23,7 +23,7 @@
 
   @media only screen and (max-width: 640px) {
     .slick-list {
-        width:25rem;
+        width:22rem;
       }
       .slick-slide {
         /* margin-left:10px; */
@@ -34,7 +34,7 @@
       }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 300px) {
     .slick-list {
         width:18rem;
       }
