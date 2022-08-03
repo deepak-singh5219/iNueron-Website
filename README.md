@@ -13,7 +13,7 @@ I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up 
 
 - This project contains the mobile responsive home page of iNeuron Business Website.
 - iNeuron started as a product development company, then launched its ed-tech division. We provide 360 degree solutions from learning to internship to finding a job, and the first ever educational OTT platform to upgrade your skill set.
-
+***
 # Technologies Used
 
 <img align="left" alt="HTML5" width="26px" src="./readmeAssets/html-5.png" /> `HTML`
@@ -28,7 +28,7 @@ I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up 
 <img align="left" alt="React Js" width="26px" src="./readmeAssets/logo512.png" /> `React Js`
 
 <img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/Tailwind.png" /> `Tailwind CSS`
-
+***
 # Features
  - Build over React which offers stability on single page web apps.
  - Contains animations which makes it more interactive to users.
@@ -37,15 +37,27 @@ I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up 
  - Clean and Beautiful UI Design
  - Made in Dark Mode
  - Fully Responsive Mobile Design
-
+***
  # Website
  ![](./readmeAssets/screebshot.png)
+ ***
+ #Video Demonstration 
+ 
 
+https://user-images.githubusercontent.com/84671689/182597031-1e4c5973-58bf-4de1-accf-5c6051eb43be.mp4
+
+
+ 
+***
  # Mobile Responsive Design
 
  
 
+https://user-images.githubusercontent.com/84671689/182592617-c4f78ff5-dbc1-4207-bcb0-8bb328ba6a7b.mp4
 
+
+
+***
  # Contact
 
  <img align="left" alt="HTML5" width="26px" src="./readmeAssets/linkedin.png" /> [Linkedin](https://www.linkedin.com/in/deepaksingh5219/)
@@ -58,5 +70,8 @@ I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up 
 <img align="left" alt="JavaScript" width="26px" src="./readmeAssets/instagram.png" /> [Instagram](https://www.instagram.com/deepak_singh_5219/)
 
 <img align="left" alt="React Js" width="26px" src="./readmeAssets/findcoder.png" /> [Findcoder](https://www.findcoder.io/u/deepaksingh5219)
-
+***
+#Live Demo Link
+[iNeuron](https://inueron-website.vercel.app/)
+***
 
